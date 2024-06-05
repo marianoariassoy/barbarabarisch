@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-text-primary: #5e5f61;
+  --color-primary: #f05a7d;
+  --color-secondary: #9b8079;
+  --image-nav-bg: url('./images/select1.png');
+  --image-lan-bg: url('./images/globo1.png');
+}
+body {
+  color: var(--color-text-primary);
+  accent-color: var(--color-1);
+  font-optical-sizing: auto;
+  @media (max-width: 920px) {
+    font-size: 14px;
+  }
+}
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+.text-primary {
+  color: var(--color-primary);
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-primary-hover:hover {
+  background-color: var(--color-secondary) !important;
+}
+.img-bg {
+  background-image: var(--image-nav-bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.img-bg-lan {
+  background-image: var(--image-lan-bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.img-bg-lan:hover {
+  background-image: url('./images/globo_on.png') !important;
+}
